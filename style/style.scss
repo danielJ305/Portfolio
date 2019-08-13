@@ -1,0 +1,60 @@
+.navigation {
+    background-color: lightyellow;
+    .nav-links > li > a > img {
+        width: 35px;
+        height: auto;
+        margin: 0.6vw
+    }
+    .name-intro > h2 {
+        margin: 0.6vw;
+    }
+    .title {
+        margin: 0.6vw;
+        text-align: end;
+    }
+        .nav-tags {
+            margin: 0.6vw;
+            margin-top:5vh;
+            li {
+                list-style-type: none;
+                margin-top:4vh;
+                width:100px;
+                text-align: end;
+            }
+            a {
+                color: black;
+                font-size:1.2em;
+                text-decoration: none;
+            }
+                li:hover {
+                    a::after {
+                        content: "-";
+                        margin-right:5px;
+                        position: absolute;
+                        right:6vw;
+                    }
+                    a {
+                        font-weight: bold;
+                    }
+                }
+        }
+    .contact-me {
+        padding-top: 28vh;
+        h3, li, p {
+            margin:0.6vw;
+        }
+        li {
+            list-style-type: none;
+        }
+        a {
+            text-decoration: none;
+            color:black;
+        }
+    }
+}
+
+.canvas {
+    background-color: lightcoral;
+    margin-left: 25%;
+}
+

@@ -1,0 +1,59 @@
+.navigation {
+  background-color: lightyellow;
+}
+.navigation .nav-links > li > a > img {
+  width: 35px;
+  height: auto;
+  margin: 0.6vw;
+}
+.navigation .name-intro > h2 {
+  margin: 0.6vw;
+}
+.navigation .title {
+  margin: 0.6vw;
+  text-align: end;
+}
+.navigation .nav-tags {
+  margin: 0.6vw;
+  margin-top: 5vh;
+}
+.navigation .nav-tags li {
+  list-style-type: none;
+  margin-top: 4vh;
+  width: 100px;
+  text-align: end;
+}
+.navigation .nav-tags a {
+  color: black;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+.navigation .nav-tags li:hover a::after {
+  content: "-";
+  margin-right: 5px;
+  position: absolute;
+  right: 6vw;
+}
+.navigation .nav-tags li:hover a {
+  font-weight: bold;
+}
+.navigation .contact-me {
+  padding-top: 28vh;
+}
+.navigation .contact-me h3, .navigation .contact-me li, .navigation .contact-me p {
+  margin: 0.6vw;
+}
+.navigation .contact-me li {
+  list-style-type: none;
+}
+.navigation .contact-me a {
+  text-decoration: none;
+  color: black;
+}
+
+.canvas {
+  background-color: lightcoral;
+  margin-left: 25%;
+}
+
+/*# sourceMappingURL=style.css.map */
