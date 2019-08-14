@@ -2,20 +2,22 @@
   background-color: lightyellow;
 }
 .navigation .nav-links > li > a > img {
-  width: 35px;
+  width: 25px;
   height: auto;
   margin: 0.6vw;
 }
 .navigation .name-intro > h2 {
   margin: 0.6vw;
+  margin-right: 1vw;
 }
 .navigation .title {
   margin: 0.6vw;
+  margin-right: 1vw;
   text-align: end;
 }
 .navigation .nav-tags {
-  margin: 0.6vw;
-  margin-top: 5vh;
+  margin-right: 0.6vw;
+  margin-right: 1vw;
 }
 .navigation .nav-tags li {
   list-style-type: none;
@@ -37,9 +39,6 @@
 .navigation .nav-tags li:hover a {
   font-weight: bold;
 }
-.navigation .contact-me {
-  padding-top: 28vh;
-}
 .navigation .contact-me h3, .navigation .contact-me li, .navigation .contact-me p {
   margin: 0.6vw;
 }
@@ -54,6 +53,21 @@
 .canvas {
   background-color: lightcoral;
   margin-left: 25%;
+}
+.canvas .about > p {
+  margin: auto;
+  width: 600px;
+}
+.canvas .work-container p {
+  margin: auto;
+  width: 600px;
+}
+.canvas .work-container img {
+  margin-right: 2vw;
+}
+.canvas .work-container img:hover {
+  width: 30px;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

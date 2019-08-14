@@ -1,20 +1,23 @@
 .navigation {
     background-color: lightyellow;
     .nav-links > li > a > img {
-        width: 35px;
+        width: 25px;
         height: auto;
         margin: 0.6vw
     }
     .name-intro > h2 {
         margin: 0.6vw;
+        margin-right:1vw;
     }
     .title {
         margin: 0.6vw;
+        margin-right:1vw;
         text-align: end;
     }
         .nav-tags {
-            margin: 0.6vw;
-            margin-top:5vh;
+            margin-right:0.6vw;
+            margin-right:1vw;
+            
             li {
                 list-style-type: none;
                 margin-top:4vh;
@@ -39,7 +42,7 @@
                 }
         }
     .contact-me {
-        padding-top: 28vh;
+        
         h3, li, p {
             margin:0.6vw;
         }
@@ -56,5 +59,28 @@
 .canvas {
     background-color: lightcoral;
     margin-left: 25%;
+    .about > p {
+        margin:auto;
+        width:600px;
+    }
+    
+    .work-container {
+            p {
+                margin: auto;
+                width: 600px;
+            }
+
+            img {
+                margin-right: 2vw;
+            }
+
+            img:hover {
+                width: 30px;
+                height: auto;
+            }
+        }
 }
+
+
+
 

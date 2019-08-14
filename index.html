@@ -7,20 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="output\style.css">
 
-    
+
     <title>Personal Website</title>
 </head>
 
 <body>
     <div class=".mx-auto px-0 body">
         <div class="row no-gutters d-flex row-container">
-
-            <div class="w-25 min-vh-100 position-fixed navigation">
+            <div class="w-25 min-vh-100 d-flex flex-column position-fixed navigation">
                 <div class="row no-gutters">
                     <div class="col-2 nav-links">
                         <li><a href=""><img src="imgs/github.svg"></a></li>
@@ -30,20 +29,20 @@
                         <h2>Hi, I'm Daniel</h2>
                     </div>
                 </div>
-                <div class="row no-gutters">
-                    <div class="w-100 d-flex flex-column title">
+                <div class="row no-gutters w-100 d-flex flex-column flex-fill">
+                    <div class="mt-auto mb-auto title">
                         <h1>Daniel Justiz</h1>
                         <h1>Front End Developer</h1>
                     </div>
                 </div>
-                <div class="row no-gutters">
-                    <div class="w-100 d-flex align-items-end flex-column nav-tags">
+                <div class="row no-gutters w-100 d-flex align-items-end flex-column flex-fill">
+                    <div class="nav-tags">
                         <li><a href="">About</a></li>
                         <li><a href="">Work</a></li>
                     </div>
                 </div>
-                <div class="row no-gutters">
-                    <div class="w-100 h-100 contact-me">
+                <div class="row no-gutters w-100 d-flex align-items-end flex-column flex-fill">
+                    <div class="w-100 mt-auto contact-me">
                         <h3>Contact Me</h3>
                         <li><a href="">danieljustiz9508@gmail.com</a></li>
                         <p>Miami, Fl</p>
@@ -52,40 +51,58 @@
             </div>
 
             <div class="w-75 min-vh-100 canvas">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, dolorem!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, dolorem!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, dolorem!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, dolorem!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, dolorem!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, dolorem!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, dolorem!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, dolorem!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, dolorem!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, dolorem!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, dolorem!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, dolorem!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, dolorem!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, dolorem!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, dolorem!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, dolorem!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, dolorem!</p>
+                <div class="row no-gutters min-vh-100">
+                    <div id="about" class="w-100 mt-auto mb-auto about">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quae veniam consequuntur,
+                            voluptatum ut error architecto aliquid facere assumenda obcaecati impedit, ipsa perferendis
+                            odit expedita quod exercitationem. Unde, adipisci? Ullam provident beatae autem asperiores.
+                            Aut officia, laboriosam assumenda repellat sed ducimus qui consectetur nisi distinctio odio
+                            necessitatibus quaerat fugit libero, perspiciatis consequatur reprehenderit, at debitis
+                            autem harum. Alias dicta quaerat architecto neque quod! Voluptates illo suscipit dolorem.
+                            Eveniet explicabo non voluptatem voluptatibus inventore repellendus? Minus quas maiores
+                            dignissimos quae velit quia perferendis nostrum ipsam et vitae, exercitationem ullam dolorum
+                            vel minima molestiae totam omnis impedit soluta nulla nobis in officia?</p>
+                    </div>
+                </div>
+                <div class="row no-gutters min-vh-100 work-container">
+                    <div id="work-main" class="w-100 mt-auto mb-auto d-flex work-main">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quae veniam
+                            consequuntur, voluptatum ut error architecto aliquid facere assumenda
+                            obcaecati impedit, ipsa perferendis odit expedita quod exercitationem. Unde,
+                            adipisci? Ullam provident beatae autem asperiores. Aut officia, laboriosam
+                            assumenda repellat sed ducimus qui consectetur nisi distinctio odio
+                            necessitatibus quaerat fugit libero, perspiciatis consequatur reprehenderit,
+                            at debitis autem harum. Alias dicta quaerat architecto neque quod!
+                            Voluptates illo suscipit dolorem. Eveniet explicabo non voluptatem
+                            voluptatibus inventore repellendus? Minus quas maiores dignissimos quae
+                            velit quia perferendis nostrum ipsam et vitae, exercitationem ullam dolorum
+                            vel minima molestiae totam omnis impedit soluta nulla nobis in officia?</p>
+                        <img id="forward-arrow" src="imgs/baseline-navigate_next-24px.svg" alt="">
+                    </div>
+                    <div id="work-section">
+                        <p>ASD ipsum dolor sit amet consectetur, adipisicing elit. Quae alias voluptatum deleniti
+                            repellendus dolorum vitae sint distinctio porro. Quod perspiciatis excepturi doloribus.
+                            Quas, asperiores excepturi a perferendis perspiciatis nisi illo.</p>
+                        <img id="back-arrow" src="imgs/baseline-arrow_back_ios-24px.svg" alt="">
+                    </div>
+                </div>
+
 
             </div>
-
         </div>
-    </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+        <script src="script\script.js"></script>
 </body>
 
 </html>
