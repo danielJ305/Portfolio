@@ -56,29 +56,47 @@
     }
 }
 
-.canvas {
+#canvas {
     background-color: lightcoral;
     margin-left: 25%;
-    .about > p {
-        margin:auto;
-        width:600px;
+
+    #about-me,
+    #knowledge {
+        padding:5vh 1vw 0 1vw;
     }
-    
-    .work-container {
-            p {
-                margin: auto;
-                width: 600px;
-            }
 
-            img {
-                margin-right: 2vw;
-            }
-
-            img:hover {
-                width: 30px;
-                height: auto;
-            }
+    #about-me {
+        h1 {
+            padding:0 3vw;
+            font-size:3rem;  
         }
+        p {
+            text-align: center;
+            text-align: justify;
+            padding:0 3vw;
+        }
+    }
+
+    #knowledge {
+        h2 {
+            font-size:2rem;
+        }
+
+    }
+
+    #my-plan {
+        padding:0 1vw 0 1vw;
+        h2 {
+            padding:0 3vw;
+            position: absolute;
+            bottom:25vh;
+            font-size:6rem;
+        }
+        p {
+            padding:0 3vw;
+        }
+    }
+
 }
 
 

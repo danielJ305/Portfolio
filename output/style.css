@@ -50,24 +50,37 @@
   color: black;
 }
 
-.canvas {
+#canvas {
   background-color: lightcoral;
   margin-left: 25%;
 }
-.canvas .about > p {
-  margin: auto;
-  width: 600px;
+#canvas #about-me,
+#canvas #knowledge {
+  padding: 5vh 1vw 0 1vw;
 }
-.canvas .work-container p {
-  margin: auto;
-  width: 600px;
+#canvas #about-me h1 {
+  padding: 0 3vw;
+  font-size: 3rem;
 }
-.canvas .work-container img {
-  margin-right: 2vw;
+#canvas #about-me p {
+  text-align: center;
+  text-align: justify;
+  padding: 0 3vw;
 }
-.canvas .work-container img:hover {
-  width: 30px;
-  height: auto;
+#canvas #knowledge h2 {
+  font-size: 2rem;
+}
+#canvas #my-plan {
+  padding: 0 1vw 0 1vw;
+}
+#canvas #my-plan h2 {
+  padding: 0 3vw;
+  position: absolute;
+  bottom: 25vh;
+  font-size: 6rem;
+}
+#canvas #my-plan p {
+  padding: 0 3vw;
 }
 
 /*# sourceMappingURL=style.css.map */
