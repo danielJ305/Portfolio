@@ -9,6 +9,9 @@
         height: auto;
         margin: 0.6vw;       
     }
+    .nav-links > li {
+            list-style-type: none;
+    }
     .name-intro > h2 {
         margin: 0.6vw;
         margin-right:1vw;
@@ -91,7 +94,7 @@
             }
         }
     }
-    @media screen and (max-width: 1350px) {
+    @media (max-width: 1350px) {
         .card {
             width: 12rem !important;
         }
@@ -156,9 +159,9 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media (min-width: 1024px) and (max-width: 1200px) {
     #navigation {
-        width: 300px !important;
+        width: 300px;
     }
 
     #canvas {
@@ -169,7 +172,7 @@
                 width:100% !important;
             }
             .card {
-                width:16rem !important;
+                width:100% !important;
                 margin-left:auto;
                 margin-right:auto;
             }
@@ -177,6 +180,31 @@
     }
 }
 
+@media (max-width: 1024px) {
+    #navigation {
+        width: 250px;
+        .contact-me {
+            // li {
+                
+            // }
+        }
+    }
+
+    #canvas {
+        margin-left: 250px;
+        .techs {
+            flex-direction: column;
+            .skills {
+                width: 100% !important; 
+            }
+            .card {
+               width:100% !important;
+               margin-left:auto;
+               margin-right:auto;
+            }
+        }
+    }
+}
 
 
 
