@@ -94,6 +94,9 @@
         }
         .skills {
             padding:1vw;
+            li {
+                list-style-type: none;
+            }
         }
         .card {
             background-color:#343140;
@@ -257,6 +260,19 @@
         }
         #knowledge {
             width: 100% !important;
+            .techs {
+                flex-direction: column;
+
+                .skills {
+                    width: 100% !important;
+                }
+
+                .card {
+                    width: 100% !important;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
         }
 
         .my-work-title {

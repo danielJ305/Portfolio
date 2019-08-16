@@ -90,6 +90,9 @@
 #canvas #knowledge .skills {
   padding: 1vw;
 }
+#canvas #knowledge .skills li {
+  list-style-type: none;
+}
 #canvas #knowledge .card {
   background-color: #343140;
 }
@@ -230,6 +233,17 @@
   }
   #canvas #knowledge {
     width: 100% !important;
+  }
+  #canvas #knowledge .techs {
+    flex-direction: column;
+  }
+  #canvas #knowledge .techs .skills {
+    width: 100% !important;
+  }
+  #canvas #knowledge .techs .card {
+    width: 100% !important;
+    margin-left: auto;
+    margin-right: auto;
   }
   #canvas .my-work-title {
     margin-top: 6vh;
