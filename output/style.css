@@ -1,86 +1,161 @@
-.navigation {
-  background-color: lightyellow;
+#navigation {
+  width: 350px;
+  background-color: #A6A4A6;
+  color: #181426;
+  font-family: "Roboto Mono", monospace;
 }
-.navigation .nav-links > li > a > img {
+#navigation .nav-links > li > a > img {
   width: 25px;
   height: auto;
   margin: 0.6vw;
 }
-.navigation .name-intro > h2 {
-  margin: 0.6vw;
-  margin-right: 1vw;
-}
-.navigation .title {
+#navigation .name-intro > h2 {
   margin: 0.6vw;
   margin-right: 1vw;
   text-align: end;
 }
-.navigation .nav-tags {
+#navigation .title {
+  margin: 0.6vw;
+  margin-right: 1vw;
+  text-align: end;
+}
+#navigation .nav-tags {
   margin-right: 0.6vw;
   margin-right: 1vw;
 }
-.navigation .nav-tags li {
+#navigation .nav-tags li {
   list-style-type: none;
   margin-top: 4vh;
   width: 100px;
   text-align: end;
 }
-.navigation .nav-tags a {
-  color: black;
+#navigation .nav-tags a {
+  color: #181426;
   font-size: 1.2em;
   text-decoration: none;
 }
-.navigation .nav-tags li:hover a::after {
+#navigation .nav-tags li:hover a::after {
   content: "-";
   margin-right: 5px;
   position: absolute;
   right: 6vw;
 }
-.navigation .nav-tags li:hover a {
+#navigation .nav-tags li:hover a {
   font-weight: bold;
 }
-.navigation .contact-me h3, .navigation .contact-me li, .navigation .contact-me p {
+#navigation .contact-me h3, #navigation .contact-me li, #navigation .contact-me p {
   margin: 0.6vw;
 }
-.navigation .contact-me li {
+#navigation .contact-me li {
   list-style-type: none;
 }
-.navigation .contact-me a {
+#navigation .contact-me a {
   text-decoration: none;
-  color: black;
+  color: #181426;
 }
 
 #canvas {
-  background-color: lightcoral;
-  margin-left: 25%;
+  margin-left: 350px;
+  color: #F2F0F0;
+  background-color: #181426;
+  font-family: "Roboto Mono", monospace;
 }
-#canvas #about-me,
-#canvas #knowledge {
-  padding: 5vh 1vw 0 1vw;
+#canvas #about-me {
+  padding: 2vw 3vw 0 3vw;
 }
 #canvas #about-me h1 {
-  padding: 0 3vw;
-  font-size: 3rem;
+  font-size: 4rem;
 }
-#canvas #about-me p {
-  text-align: center;
-  text-align: justify;
-  padding: 0 3vw;
+#canvas #knowledge {
+  padding: 2vw 3vw 0 3vw;
 }
 #canvas #knowledge h2 {
-  font-size: 2rem;
+  font-size: 3rem;
+}
+#canvas #knowledge .skills {
+  padding: 1vw;
+}
+#canvas #knowledge .card {
+  background-color: #343140;
+}
+#canvas #knowledge .card ul > li {
+  background-color: #343140;
+}
+@media screen and (max-width: 1350px) {
+  #canvas .card {
+    width: 12rem !important;
+  }
 }
 #canvas #my-plan {
   padding: 0 1vw 0 1vw;
+  padding: 0 3vw;
 }
 #canvas #my-plan h2 {
-  padding: 0 3vw;
-  position: absolute;
-  bottom: 25vh;
-  font-size: 6rem;
+  font-size: 4rem;
 }
-#canvas #my-plan p {
-  padding: 0 3vw;
+#canvas #work-main #work-showcase-container .for-first-child:not(:first-child) {
+  margin-top: 3vh;
+}
+#canvas #work-main .my-work-title {
+  padding: 2vw 3vw 0 3vw;
+}
+#canvas #work-main .my-work-title h2 {
+  font-size: 3rem;
+}
+#canvas #work-main .work-showcase {
+  width: 55%;
+}
+#canvas #work-main .work-showcase :not(:first-child) .work-showcase {
+  color: red;
+}
+#canvas #work-main .work-showcase h3 {
+  padding: 1vw 3vw 0 3vw;
+  font-size: 2rem;
+}
+#canvas #work-main .work-showcase #carouselExampleIndicators {
+  padding: 3vw;
+  padding-top: 1vh;
+}
+#canvas #work-main .work-showcase #carouselExampleIndicators .carousel-control-prev-icon {
+  margin-left: 25px !important;
+}
+#canvas #work-main .work-showcase #carouselExampleIndicators .carousel-control-next-icon {
+  margin-right: 25px !important;
+}
+#canvas #work-main .work-showcase #carouselExampleIndicators .carousel-inner {
+  height: 350px;
+}
+#canvas #work-main .work-showcase-dev {
+  width: 45%;
+  padding-right: 3vw;
+}
+#canvas #work-main .work-showcase-dev h4 {
+  padding: 1vw 3vw 0 0vw;
+  font-size: 2rem;
+}
+#canvas #work-main .work-showcase-dev p {
+  padding-top: 1vh;
+}
+
+@media screen and (max-width: 1200px) {
+  #navigation {
+    width: 300px !important;
+  }
+
+  #canvas {
+    margin-left: 300px;
+  }
+  #canvas .techs {
+    flex-direction: column;
+  }
+  #canvas .techs .skills {
+    width: 100% !important;
+  }
+  #canvas .techs .card {
+    width: 16rem !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

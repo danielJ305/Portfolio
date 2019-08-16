@@ -1,13 +1,18 @@
-.navigation {
-    background-color: lightyellow;
+#navigation {
+    width: 350px;
+    background-color:#A6A4A6;
+    color:#181426;
+    font-family: 'Roboto Mono',
+    monospace;
     .nav-links > li > a > img {
         width: 25px;
         height: auto;
-        margin: 0.6vw
+        margin: 0.6vw;       
     }
     .name-intro > h2 {
         margin: 0.6vw;
         margin-right:1vw;
+        text-align: end;
     }
     .title {
         margin: 0.6vw;
@@ -25,7 +30,7 @@
                 text-align: end;
             }
             a {
-                color: black;
+                color:#181426;                
                 font-size:1.2em;
                 text-decoration: none;
             }
@@ -51,52 +56,125 @@
         }
         a {
             text-decoration: none;
-            color:black;
+            color:#181426;            
         }
     }
 }
 
 #canvas {
-    background-color: lightcoral;
-    margin-left: 25%;
-
-    #about-me,
-    #knowledge {
-        padding:5vh 1vw 0 1vw;
-    }
-
+    // width:73vw;
+    margin-left: 350px;
+    color:#F2F0F0;
+    background-color: #181426;
+    font-family: 'Roboto Mono',
+    monospace;
     #about-me {
+    
+        padding:2vw 3vw 0 3vw;
         h1 {
-            padding:0 3vw;
-            font-size:3rem;  
+            font-size:4rem;
         }
-        p {
-            text-align: center;
-            text-align: justify;
-            padding:0 3vw;
-        }
-    }
 
+    }
     #knowledge {
+        padding:2vw 3vw 0 3vw;
         h2 {
-            font-size:2rem;
+            font-size:3rem;
         }
-
+        .skills {
+            padding:1vw;
+        }
+        .card {
+            background-color:#343140;
+            ul > li {
+                background-color:#343140;
+            }
+        }
     }
+    @media screen and (max-width: 1350px) {
+        .card {
+            width: 12rem !important;
+        }
+    }
+
 
     #my-plan {
         padding:0 1vw 0 1vw;
+        padding:0 3vw;
+        // margin-bottom:5vh;
         h2 {
-            padding:0 3vw;
-            position: absolute;
-            bottom:25vh;
-            font-size:6rem;
-        }
-        p {
-            padding:0 3vw;
+            // position: absolute;
+            // bottom:25vh;
+            font-size:4rem;
         }
     }
 
+    #work-main {
+        #work-showcase-container .for-first-child:not(:first-child) {
+            margin-top:3vh;
+        }
+        .my-work-title {
+            padding:2vw 3vw 0 3vw;  
+            h2 {
+                font-size:3rem;
+            }
+        }
+        .work-showcase {
+            :not(:first-child) .work-showcase {
+                color:red;
+            }
+            h3 {
+                padding:1vw 3vw 0 3vw;
+                font-size:2rem;
+            }
+            width:55%;
+            #carouselExampleIndicators {
+                padding:3vw;
+                padding-top:1vh;
+                .carousel-control-prev-icon {
+                    margin-left:25px !important;
+                }
+                .carousel-control-next-icon {
+                    margin-right:25px !important;                    
+                }
+                .carousel-inner {
+                    height:350px;
+                }
+            }
+        }
+        .work-showcase-dev {
+            width:45%;
+            padding-right:3vw;
+            h4 {
+                padding:1vw 3vw 0 0vw;
+                font-size:2rem;
+            }
+            p {
+                padding-top:1vh;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #navigation {
+        width: 300px !important;
+    }
+
+    #canvas {
+        margin-left: 300px;
+        .techs {
+            flex-direction: column;
+            .skills {
+                width:100% !important;
+            }
+            .card {
+                width:16rem !important;
+                margin-left:auto;
+                margin-right:auto;
+            }
+        }
+    }
 }
 
 
