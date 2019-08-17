@@ -22,8 +22,8 @@
             <div id="navigation" class="min-vh-100 d-flex flex-column position-fixed navigation">
                 <div class="row no-gutters">
                     <div class="col-2 nav-links">
-                        <li><a href=""><img src="imgs/github.svg"></a></li>
-                        <li><a href=""><img src="imgs/linkedin.svg"></a></li>
+                        <li><a href="https://github.com/danielJ305" target="_blank"><img src="imgs\github-logo.svg"></a></li>
+                        <li><a href="https://www.linkedin.com/in/daniel-justiz-a76a3218a/" target="_blank"><img src="imgs\linkedin(1).svg"></a></li>
                     </div>
                     <div class="col-10 d-flex name-intro">
                         <h2>Hi, I'm Daniel</h2>
@@ -37,8 +37,8 @@
                 </div>
                 <div class="row no-gutters w-100 d-flex align-items-end flex-column flex-fill">
                     <div class="nav-tags">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#work-main">Work</a></li>
+                        <li><a data-scroll href="#about">About -</a></li>
+                        <li><a data-scroll href="#work-main">Work -</a></li>
                     </div>
                 </div>
                 <div class="row no-gutters w-100 d-flex align-items-end flex-column flex-fill">
@@ -282,6 +282,16 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
         </script>
         <script src="script\script.js"></script>
+
+        <script src="smooth-scroll-master\dist\smooth-scroll.polyfills.min.js"></script>
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]', {
+                    customEasing: function (time) {
+                        return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+
+                    }
+                });
+        </script>
 </body>
 
 </html>

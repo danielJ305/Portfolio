@@ -4,13 +4,17 @@
     color:#181426;
     font-family: 'Roboto Mono',
     monospace;
+    max-width: 350px;
     .nav-links > li > a > img {
-        width: 25px;
+        width: 3.2vw;
+        max-width:60px;
         height: auto;
-        margin: 0.6vw;  
+        margin: 0.6vw;
+        margin-bottom:0.4vw;  
         padding-left:5px;
         padding-top:5px;
     }
+
     .nav-links > li {
             list-style-type: none;
     }
@@ -42,7 +46,7 @@
                 li:hover {
                     a::after {
                         content: "-";
-                        margin-right:5px;
+                        margin-right:3.5vw;
                         position: absolute;
                         right:6vw;
                     }
@@ -75,7 +79,11 @@
     background-color: #181426;
     font-family: 'Roboto Mono',
     monospace;
-
+    width: 100%;
+    #about {
+        max-width: 1300px;
+        margin-right:auto;
+    }
     .about-me-container {
         width: 50%;
     }
@@ -124,6 +132,8 @@
     }
 
     #work-main {
+        max-width: 1300px;
+        margin-right:auto;
         #work-showcase-container .for-first-child:not(:first-child) {
             margin-top:3vh;
         }
@@ -136,6 +146,7 @@
                 font-size:3rem;
             }
         }
+
         .work-showcase {
             :not(:first-child) .work-showcase {
                 color:red;
@@ -179,6 +190,20 @@
 @media (min-width: 1024px) and (max-width: 1200px) {
     #navigation {
         width: 300px;
+        .nav-tags {
+            li:hover {
+                a::after {
+                    content: "-";
+                    margin-right: 5vw;
+                    position: absolute;
+                    right: 6vw;
+                }
+
+                a {
+                    font-weight: bold;
+                }
+            }
+        }
     }
 
     #canvas {
@@ -201,9 +226,21 @@
     #navigation {
         width: 250px;
         .contact-me {
-            // li {
-                
-            // }
+
+        }
+        .nav-tags {
+            li:hover {
+                a::after {
+                    content: "-";
+                    margin-right: 5vw;
+                    position: absolute;
+                    right: 6vw;
+                }
+
+                a {
+                    font-weight: bold;
+                }
+            }
         }
     }
 
@@ -242,6 +279,20 @@
 @media (max-width: 835px) {
     #navigation {
         width:230px;
+        .nav-tags {
+            li:hover {
+                a::after {
+                    content: "-";
+                    margin-right: 7.2vw;
+                    position: absolute;
+                    right: 6vw;
+                }
+
+                a {
+                    font-weight: bold;
+                }
+            }
+        }
     }
 
     #canvas {

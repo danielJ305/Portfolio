@@ -3,11 +3,14 @@
   background-color: #A6A4A6;
   color: #181426;
   font-family: "Roboto Mono", monospace;
+  max-width: 350px;
 }
 #navigation .nav-links > li > a > img {
-  width: 25px;
+  width: 3.2vw;
+  max-width: 60px;
   height: auto;
   margin: 0.6vw;
+  margin-bottom: 0.4vw;
   padding-left: 5px;
   padding-top: 5px;
 }
@@ -41,7 +44,7 @@
 }
 #navigation .nav-tags li:hover a::after {
   content: "-";
-  margin-right: 5px;
+  margin-right: 3.5vw;
   position: absolute;
   right: 6vw;
 }
@@ -70,6 +73,11 @@
   color: #F2F0F0;
   background-color: #181426;
   font-family: "Roboto Mono", monospace;
+  width: 100%;
+}
+#canvas #about {
+  max-width: 1300px;
+  margin-right: auto;
 }
 #canvas .about-me-container {
   width: 50%;
@@ -110,6 +118,10 @@
 }
 #canvas #my-plan h2 {
   font-size: 4rem;
+}
+#canvas #work-main {
+  max-width: 1300px;
+  margin-right: auto;
 }
 #canvas #work-main #work-showcase-container .for-first-child:not(:first-child) {
   margin-top: 3vh;
@@ -165,6 +177,15 @@
   #navigation {
     width: 300px;
   }
+  #navigation .nav-tags li:hover a::after {
+    content: "-";
+    margin-right: 5vw;
+    position: absolute;
+    right: 6vw;
+  }
+  #navigation .nav-tags li:hover a {
+    font-weight: bold;
+  }
 
   #canvas {
     margin-left: 300px;
@@ -185,6 +206,16 @@
   #navigation {
     width: 250px;
   }
+  #navigation .nav-tags li:hover a::after {
+    content: "-";
+    margin-right: 5vw;
+    position: absolute;
+    right: 6vw;
+  }
+  #navigation .nav-tags li:hover a {
+    font-weight: bold;
+  }
+
   #canvas {
     margin-left: 250px;
   }
@@ -214,6 +245,15 @@
 @media (max-width: 835px) {
   #navigation {
     width: 230px;
+  }
+  #navigation .nav-tags li:hover a::after {
+    content: "-";
+    margin-right: 7.2vw;
+    position: absolute;
+    right: 6vw;
+  }
+  #navigation .nav-tags li:hover a {
+    font-weight: bold;
   }
 
   #canvas {
