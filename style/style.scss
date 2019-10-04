@@ -81,7 +81,7 @@
     monospace;
     width: 100%;
     #about {
-        max-width: 1300px;
+        max-width: 1120px;
         margin-right:auto;
     }
     .about-me-container {
@@ -147,18 +147,21 @@
             }
         }
 
-        .work-showcase {
-            :not(:first-child) .work-showcase {
-                color:red;
-            }
+        .work-container {
+            max-width:1120px;
+            margin-right:auto;
+        }
+        & .work-showcase {
             h3 {
-                padding:1vw 3vw 0 3vw;
+                padding:4vh 3vw 0 3vw;
                 font-size:2rem;
+                font-weight: 700;
+                color: #F2B33D;
             }
             width:55%;
-            #carouselExampleIndicators {
-                padding:3vw;
-                padding-top:1vh;
+            & div.img-carousel {
+                padding:3vw !important;
+                padding-top:1vh !important;
                 .carousel-control-prev-icon {
                     margin-left:25px !important;
                 }
@@ -166,22 +169,27 @@
                     margin-right:25px !important;                    
                 }
                 .carousel-inner {
-                    height:350px;
+                    max-height:350px !important;
+                    width: auto !important;
+                    
                 }
             }
         }
         .work-showcase-dev {
             width:45%;
             padding-right:3vw;
+            padding-top:2vh;
             h4 {
                 padding:1vw 3vw 0 0vw;
                 font-size:2rem;
             }
             p {
                 padding-top:1vh;
+                padding-bottom:5px;
             }
             li {
                 list-style-type:none;
+                padding-bottom: 7px;
             }
         }
     }
@@ -210,8 +218,10 @@
         margin-left: 300px;
         .techs {
             flex-direction: column;
+            
             .skills {
                 width:100% !important;
+
             }
             .card {
                 width:100% !important;
