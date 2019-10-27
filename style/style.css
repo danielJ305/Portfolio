@@ -31,6 +31,32 @@
   margin-right: 0.6vw;
   margin-right: 1vw;
 }
+#navigation .nav-tags #nav-hide {
+  background-color: #181426;
+  color: #A6A4A6;
+  padding: 0 !important;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  top: 30px;
+  left: 50px;
+  cursor: context-menu;
+}
+#navigation .nav-tags #nav-hide i.hide {
+  position: relative;
+  left: 4px;
+}
+#navigation .nav-tags #nav-hide:hover {
+  background-color: #343140;
+}
+#navigation .nav-tags #nav-hide:active {
+  width: 30px;
+  height: 30px;
+}
 #navigation .nav-tags li {
   list-style-type: none;
   margin-top: 4vh;
@@ -54,7 +80,9 @@
 #navigation .contact-me {
   margin-bottom: 1.5vh;
 }
-#navigation .contact-me h3, #navigation .contact-me li, #navigation .contact-me p {
+#navigation .contact-me h3,
+#navigation .contact-me li,
+#navigation .contact-me p {
   margin: 0.6vw;
   padding-left: 5px;
 }
@@ -68,12 +96,21 @@
   color: #181426;
 }
 
+.on {
+  position: fixed;
+  display: flex;
+}
+
+.off {
+  display: none !important;
+}
+
 #canvas {
-  margin-left: 350px;
   color: #F2F0F0;
   background-color: #181426;
   font-family: "Roboto Mono", monospace;
   width: 100%;
+  margin-left: 350px;
 }
 #canvas #about {
   max-width: 1120px;
@@ -178,6 +215,45 @@
 #canvas #work-main .work-showcase-dev li {
   list-style-type: none;
   padding-bottom: 7px;
+}
+
+.canvasbutton {
+  margin-left: 0 !important;
+}
+.canvasbutton #about {
+  max-width: 1200px !important;
+  margin: auto;
+}
+.canvasbutton #work-main {
+  max-width: 1200px !important;
+  margin: auto;
+}
+.canvasbutton #nav-show {
+  display: block !important;
+  position: fixed;
+  top: 50vh;
+  left: 40px;
+  border-radius: 50%;
+}
+.canvasbutton #nav-show i {
+  position: relative !important;
+  list-style-type: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: context-menu;
+}
+.canvasbutton #nav-show i:hover {
+  background-color: #343140;
+}
+.canvasbutton #nav-show i:active {
+  width: 30px;
+  height: 30px;
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) {

@@ -12,14 +12,14 @@
 
     <link rel="stylesheet" type="text/css" href="style\style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Personal Website</title>
 </head>
 
 <body>
     <div class=".mx-auto px-0 body">
         <div class="row no-gutters d-flex row-container">
-            <div id="navigation" class="min-vh-100 d-flex flex-column position-fixed navigation">
+            <div id="navigation" class="min-vh-100 flex-column on">
                 <div class="row no-gutters">
                     <div class="col-2 nav-links">
                         <li><a href="https://github.com/danielJ305" target="_blank"><img src="imgs\github-logo.svg"></a>
@@ -41,6 +41,7 @@
                     <div class="nav-tags">
                         <li><a data-scroll href="#about">About -</a></li>
                         <li><a data-scroll href="#work-main">Work -</a></li>
+                        <li id="nav-hide"><i class="material-icons hide">arrow_back_ios</i></li>
                     </div>
                 </div>
                 <div class="row no-gutters w-100 d-flex align-items-end flex-column flex-fill">
@@ -54,6 +55,7 @@
             </div>
 
             <div id="canvas" class="min-vh-100 canvas">
+                <li id="nav-show" style="display:none;"><i class="material-icons">arrow_forward_ios</i></li>
                 <div class="row no-gutters min-vh-100">
                     <div id="about" class="w-100 d-flex flex-wrap about">
                         <div class="about-me-container">
