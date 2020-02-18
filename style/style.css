@@ -4,7 +4,28 @@
   color: #181426;
   font-family: "Roboto Mono", monospace;
   max-width: 350px;
+  /* navigation hide button */
 }
+#navigation #nav-hide {
+  background-color: #181426;
+  color: #A6A4A6;
+  padding: 0 !important;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  top: 30px;
+  left: 50px;
+  cursor: context-menu;
+}
+#navigation #nav-hide i.hide {
+  position: relative;
+  left: 4px;
+}
+
 #navigation .nav-links > li > a > img {
   width: 3.2vw;
   max-width: 60px;
@@ -30,25 +51,6 @@
 #navigation .nav-tags {
   margin-right: 0.6vw;
   margin-right: 1vw;
-}
-#navigation .nav-tags #nav-hide {
-  background-color: #181426;
-  color: #A6A4A6;
-  padding: 0 !important;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  position: relative;
-  top: 30px;
-  left: 50px;
-  cursor: context-menu;
-}
-#navigation .nav-tags #nav-hide i.hide {
-  position: relative;
-  left: 4px;
 }
 #navigation .nav-tags #nav-hide:hover {
   background-color: #343140;
@@ -112,10 +114,22 @@
   width: 100%;
   margin-left: 350px;
 }
-#canvas #about {
+
+#about {
   max-width: 1120px;
+  margin: 0 auto;
+}
+
+#work-main {
+  max-width: 1300px;
   margin-right: auto;
 }
+
+.work-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
 #canvas .about-me-container {
   width: 50%;
 }
@@ -128,6 +142,10 @@
 #canvas #knowledge {
   width: 50%;
   padding: 2vw 3vw 0 3vw;
+}
+#canvas #knowledge .card-body {
+  -ms-flex: 0 !important;
+  flex: 0 !important;
 }
 #canvas #knowledge h2 {
   font-size: 3rem;
@@ -156,10 +174,6 @@
 #canvas #my-plan h2 {
   font-size: 4rem;
 }
-#canvas #work-main {
-  max-width: 1300px;
-  margin-right: auto;
-}
 #canvas #work-main #work-showcase-container .for-first-child:not(:first-child) {
   margin-top: 3vh;
 }
@@ -171,10 +185,6 @@
 }
 #canvas #work-main .my-work-title h2 {
   font-size: 3rem;
-}
-#canvas #work-main .work-container {
-  max-width: 1120px;
-  margin-right: auto;
 }
 #canvas #work-main .work-showcase {
   width: 55%;
@@ -304,6 +314,10 @@
   }
   #canvas .techs {
     flex-direction: column;
+  }
+  #canvas .techs .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
   }
   #canvas .techs .skills {
     width: 100% !important;

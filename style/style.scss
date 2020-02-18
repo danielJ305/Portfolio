@@ -1,7 +1,9 @@
-@import "mixins", "variables";
+@import "base", "mixins", "variables";
 
+@include navigationBase;
 @include navigation;
 
+@include canvasBase;
 @include canvas;
 
 @include mediaQ;

@@ -1,15 +1,7 @@
 
 
 @mixin navigation {
-    
     #navigation {
-        width: 350px;
-        background-color: #A6A4A6;
-        color: #181426;
-        font-family: 'Roboto Mono',
-            monospace;
-        max-width: 350px;
-
         .nav-links>li>a>img {
             width: 3.2vw;
             max-width: 60px;
@@ -40,27 +32,6 @@
             margin-right: 0.6vw;
             margin-right: 1vw;
 
-            & #nav-hide {
-                background-color: #181426;
-                color:#A6A4A6;
-                padding:0 !important;
-                width:40px;
-                height:40px;
-                display:flex;
-                justify-content: center;
-                align-items: center;
-                border-radius:50%;
-                position: relative;
-                top:30px;
-                left:50px;
-                cursor: context-menu;
-
-                & i.hide {
-                    position: relative;
-                    left:4px;
-                }
-                
-            }
             & #nav-hide:hover {
                 background-color: #343140;
             }
@@ -146,22 +117,8 @@
 }
 
 @mixin canvas { 
-    
-    
     #canvas {
-        color: #F2F0F0;
-        background-color: #181426;
-        font-family: 'Roboto Mono',
-            monospace;
-        width: 100%;
-        margin-left: 350px;
-
-
-
-        #about {
-            max-width: 1120px;
-            margin-right: auto;
-        }
+        
 
         .about-me-container {
             width: 50%;
@@ -180,6 +137,10 @@
             width: 50%;
             padding: 2vw 3vw 0 3vw;
 
+            .card-body {
+                -ms-flex: 0 !important;
+                flex: 0 !important;
+            }
             h2 {
                 font-size: 3rem;
             }
@@ -218,9 +179,6 @@
         }
 
         #work-main {
-            max-width: 1300px;
-            margin-right: auto;
-
             #work-showcase-container .for-first-child:not(:first-child) {
                 margin-top: 3vh;
             }
@@ -235,11 +193,6 @@
                 h2 {
                     font-size: 3rem;
                 }
-            }
-
-            .work-container {
-                max-width: 1120px;
-                margin-right: auto;
             }
 
             & .work-showcase {
@@ -367,7 +320,6 @@
 
         #canvas {
             margin-left: 300px;
-
             .techs {
                 flex-direction: column;
 
@@ -384,7 +336,14 @@
             }
         }
     }
-
+    @media (min-width: 1750px) {
+        #about {
+            max-width: 1300px;
+        }
+        .work-container {
+            max-width: 1300px;
+        }
+    } 
     @media (min-width: 835px) and (max-width: 1024px) {
         #navigation {
             width: 250px;
@@ -412,7 +371,10 @@
 
             .techs {
                 flex-direction: column;
-
+                .card-body {
+                    -ms-flex: 1 1 auto;
+                    flex: 1 1 auto;
+                }
                 .skills {
                     width: 100% !important;
                 }
@@ -487,6 +449,7 @@
                 .techs {
                     flex-direction: column;
 
+                    
                     .skills {
                         width: 100% !important;
                     }

@@ -1,0 +1,65 @@
+@mixin navigationBase {
+    #navigation {
+        width: 350px;
+        background-color: $navigation-background-color;
+        color: $navigation-text-color;
+        font-family: 'Roboto Mono',
+        monospace;
+        max-width: 350px;
+
+        /* navigation hide button */
+        #nav-hide {
+            background-color: $navigation-text-color;
+            color: $navigation-background-color;
+            padding: 0 !important;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            position: relative;
+            top: 30px;
+            left: 50px;
+            cursor: context-menu;
+
+            & i.hide {
+                position: relative;
+                left: 4px;
+            }
+
+        }
+    }
+}
+
+@mixin canvasBase {
+    // #canvas-container {
+    //     display: flex;
+    //     width:100vw;
+    // }
+    // .canvas-pusher {
+    //     min-width:350px;
+    // }
+    #canvas {
+         color: #F2F0F0;
+         background-color: #181426;
+         font-family: 'Roboto Mono',
+         monospace;
+         width: 100%;
+            margin-left:350px;
+    }
+    #about {
+        max-width: 1120px;
+        margin:0 auto;
+    }
+
+    #work-main {
+        max-width: 1300px;
+        margin-right: auto;
+    }
+    .work-container {
+        max-width: 1120px;
+        margin:0 auto;
+    }
+    
+}
