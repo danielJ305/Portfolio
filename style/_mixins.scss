@@ -1,4 +1,27 @@
+/* Extends for Navigation */
 
+%arrow-left {
+    background-color: $navigation-text-color;
+    color: $navigation-background-color;
+    padding: 0 !important;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    top: 30px;
+    left: 50px;
+    cursor: context-menu;
+
+    & i.hide {
+        position: relative;
+        left: 4px;
+    }
+}
+
+/* ______________________ */
 
 @mixin navigation {
     #navigation {
@@ -31,6 +54,10 @@
         .nav-tags {
             margin-right: 0.6vw;
             margin-right: 1vw;
+
+            #nav-hide {
+                @extend %arrow-left;
+            }
 
             & #nav-hide:hover {
                 background-color: #343140;
@@ -116,26 +143,58 @@
     }
 }
 
+
+/* extends for canvas */
+
+%arrow-right {
+    border-radius: 50%;
+
+    & i {
+        position: relative !important;
+        list-style-type: none;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: context-menu;
+    }
+}
+
+%work-first-child {
+    #work-showcase-container .for-child:not(:first-child) {
+        margin-top: 3vh;
+    }
+
+    #work-showcase-container .for-child:last-child {
+        margin-bottom: 3vh;
+    }
+}
+
+/* __________________ */
+
+
 @mixin canvas { 
     #canvas {
-        
 
         .about-me-container {
             width: 50%;
         }
 
         #about-me {
-            padding: 2vw 3vw 0 3vw;
+            padding: $padding-titles;
 
             h1 {
                 font-size: 4rem;
+                margin-bottom: 10px;
             }
 
         }
 
         #knowledge {
             width: 50%;
-            padding: 2vw 3vw 0 3vw;
+            padding: $padding-titles;
 
             .card-body {
                 -ms-flex: 0 !important;
@@ -143,6 +202,7 @@
             }
             h2 {
                 font-size: 3rem;
+                margin-bottom: 10px;
             }
 
             .skills {
@@ -173,27 +233,63 @@
             padding: 0 1vw 0 1vw;
             padding: 0 3vw;
             h2 {
-
+                margin-bottom: 10px;
                 font-size: 4rem;
             }
         }
 
-        #work-main {
-            #work-showcase-container .for-first-child:not(:first-child) {
-                margin-top: 3vh;
+        .my-work-wrapper {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .my-work-title {
+            padding: $padding-titles;
+
+            h2 {
+                font-size: 3rem;
+            }
+        }
+
+        .work-toggle-section {
+            padding: $padding-titles;
+            display: flex;
+
+            h3 {
+                padding-right: 15px;
             }
 
-            #work-showcase-container .for-first-child:last-child {
-                margin-bottom: 3vh;
-            }
+            #work-toggle {
+                @extend %arrow-right;
+                display: block !important;
+                width: 40px;
+                height: 40px;
 
-            .my-work-title {
-                padding: 2vw 3vw 0 3vw;
+                i:hover {
+                    background-color: #343140;
+                }
 
-                h2 {
-                    font-size: 3rem;
+                i:active {
+                    width: 30px;
+                    height: 30px;
                 }
             }
+
+            li#work-toggle {
+                background-color: rgba(255, 255, 255, 0.3);
+                color: rgba(255, 255, 255, 0.6);
+            }
+
+            span {
+                padding: 8px 0px 0px 15px;
+            }
+
+        }
+
+        #work-main {
+            @extend %work-first-child;
+
+            
 
             & .work-showcase {
                 h3 {
@@ -254,36 +350,22 @@
 
         
         & #about {
-            max-width: 1200px !important;
+            max-width: 1300px !important;
             margin: auto;
         }
 
         & #work-main {
-            max-width: 1200px !important;
+            max-width: 1300px !important;
             margin: auto;
         }
 
         #nav-show {
+            @extend %arrow-right;
             display: block !important;
             position: fixed;
             top: 50vh;
             left: 40px;
-            border-radius: 50%;
-
-            & i {
-                position: relative !important;
-                list-style-type: none;
-                background-color: rgba(255, 255, 255, 0.3);
-                color: rgba(255, 255, 255, 0.6);
-                width: 40px;
-                height: 40px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 50%;
-                cursor: context-menu;
-            }
-
+            
             i:hover {
                 background-color: #343140;
             }
@@ -293,9 +375,57 @@
                 height: 30px;
             }
         }
+        li#nav-show {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: rgba(255, 255, 255, 0.6);
+        }
     }
 
 }
+
+/*** Graphic Design ***/
+#graphic-design {
+    max-width: 1300px;
+    width:100%;
+    margin: 0 auto;
+
+    .graphic-design-wrapper {
+        
+    }
+
+    .graphic-design-sec {
+        padding:4vh 3vw 0 3vw;
+    }
+
+    .graphic-squares-wrapper {
+        padding:0;
+    }
+
+    .graphic-squares {
+        width:50%;  
+    }
+    .graphic-squares div {
+        // margin:6px;
+    }
+    .squares {
+        margin:15px 8px 0px 8px;
+    }
+    .squares img {
+        display: block;
+        object-fit: contain;
+        max-width: 100%;
+        height: auto;
+    
+    }
+}
+
+
+
+/* _________________ */
+
+
+
+/*** Work Section Toggler ***/
 
 @mixin mediaQ {
     @media (min-width: 1024px) and (max-width: 1200px) {
@@ -338,10 +468,32 @@
     }
     @media (min-width: 1750px) {
         #about {
-            max-width: 1300px;
+            max-width: 1250px;
+        }
+        #about-me {
+             & h1 {
+                 margin-bottom: 20px !important;
+             }
+        }
+        #my-plan {
+            padding-top:80px !important;
+            & h2 {
+                margin-bottom: 20px !important;
+            }
+        }
+        #knowledge {
+            & h2 {
+                margin-bottom: 20px !important;
+            }
+        }
+        .techs {
+            padding-top:40px;
         }
         .work-container {
-            max-width: 1300px;
+            max-width: 1250px;
+        }
+        .my-work-wrapper {
+            max-width: 1250px;
         }
     } 
     @media (min-width: 835px) and (max-width: 1024px) {

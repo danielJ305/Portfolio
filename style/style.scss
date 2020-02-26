@@ -1,4 +1,4 @@
-@import "base", "mixins", "variables";
+@import "variables", "base", "mixins";
 
 @include navigationBase;
 @include navigation;
@@ -8,5 +8,9 @@
 
 @include mediaQ;
 
+body {
+    overflow-x: hidden;
+    
+}
 
 

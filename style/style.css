@@ -1,12 +1,5 @@
-#navigation {
-  width: 350px;
-  background-color: #A6A4A6;
-  color: #181426;
-  font-family: "Roboto Mono", monospace;
-  max-width: 350px;
-  /* navigation hide button */
-}
-#navigation #nav-hide {
+/* Extends for Navigation */
+#navigation .nav-tags #nav-hide {
   background-color: #181426;
   color: #A6A4A6;
   padding: 0 !important;
@@ -21,9 +14,69 @@
   left: 50px;
   cursor: context-menu;
 }
-#navigation #nav-hide i.hide {
+#navigation .nav-tags #nav-hide i.hide {
   position: relative;
   left: 4px;
+}
+
+/* ______________________ */
+/* extends for canvas */
+.canvasbutton #nav-show, #canvas .work-toggle-section #work-toggle {
+  border-radius: 50%;
+}
+.canvasbutton #nav-show i, #canvas .work-toggle-section #work-toggle i {
+  position: relative !important;
+  list-style-type: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: context-menu;
+}
+
+#canvas #work-main #work-showcase-container .for-child:not(:first-child) {
+  margin-top: 3vh;
+}
+#canvas #work-main #work-showcase-container .for-child:last-child {
+  margin-bottom: 3vh;
+}
+
+/* __________________ */
+/*** Graphic Design ***/
+#graphic-design {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+#graphic-design .graphic-design-sec {
+  padding: 4vh 3vw 0 3vw;
+}
+#graphic-design .graphic-squares-wrapper {
+  padding: 0;
+}
+#graphic-design .graphic-squares {
+  width: 50%;
+}
+#graphic-design .squares {
+  margin: 15px 8px 0px 8px;
+}
+#graphic-design .squares img {
+  display: block;
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+
+/* _________________ */
+/*** Work Section Toggler ***/
+#navigation {
+  width: 350px;
+  background-color: #A6A4A6;
+  color: #181426;
+  font-family: "Roboto Mono", monospace;
+  max-width: 350px;
 }
 
 #navigation .nav-links > li > a > img {
@@ -116,7 +169,7 @@
 }
 
 #about {
-  max-width: 1120px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -126,7 +179,7 @@
 }
 
 .work-container {
-  max-width: 1120px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -138,6 +191,7 @@
 }
 #canvas #about-me h1 {
   font-size: 4rem;
+  margin-bottom: 10px;
 }
 #canvas #knowledge {
   width: 50%;
@@ -149,6 +203,7 @@
 }
 #canvas #knowledge h2 {
   font-size: 3rem;
+  margin-bottom: 10px;
 }
 #canvas #knowledge .skills {
   padding: 1vw;
@@ -172,19 +227,44 @@
   padding: 0 3vw;
 }
 #canvas #my-plan h2 {
+  margin-bottom: 10px;
   font-size: 4rem;
 }
-#canvas #work-main #work-showcase-container .for-first-child:not(:first-child) {
-  margin-top: 3vh;
+#canvas .my-work-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
 }
-#canvas #work-main #work-showcase-container .for-first-child:last-child {
-  margin-bottom: 3vh;
-}
-#canvas #work-main .my-work-title {
+#canvas .my-work-title {
   padding: 2vw 3vw 0 3vw;
 }
-#canvas #work-main .my-work-title h2 {
+#canvas .my-work-title h2 {
   font-size: 3rem;
+}
+#canvas .work-toggle-section {
+  padding: 2vw 3vw 0 3vw;
+  display: flex;
+}
+#canvas .work-toggle-section h3 {
+  padding-right: 15px;
+}
+#canvas .work-toggle-section #work-toggle {
+  display: block !important;
+  width: 40px;
+  height: 40px;
+}
+#canvas .work-toggle-section #work-toggle i:hover {
+  background-color: #343140;
+}
+#canvas .work-toggle-section #work-toggle i:active {
+  width: 30px;
+  height: 30px;
+}
+#canvas .work-toggle-section li#work-toggle {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
+}
+#canvas .work-toggle-section span {
+  padding: 8px 0px 0px 15px;
 }
 #canvas #work-main .work-showcase {
   width: 55%;
@@ -231,11 +311,11 @@
   margin-left: 0 !important;
 }
 .canvasbutton #about {
-  max-width: 1200px !important;
+  max-width: 1300px !important;
   margin: auto;
 }
 .canvasbutton #work-main {
-  max-width: 1200px !important;
+  max-width: 1300px !important;
   margin: auto;
 }
 .canvasbutton #nav-show {
@@ -243,20 +323,6 @@
   position: fixed;
   top: 50vh;
   left: 40px;
-  border-radius: 50%;
-}
-.canvasbutton #nav-show i {
-  position: relative !important;
-  list-style-type: none;
-  background-color: rgba(255, 255, 255, 0.3);
-  color: rgba(255, 255, 255, 0.6);
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  cursor: context-menu;
 }
 .canvasbutton #nav-show i:hover {
   background-color: #343140;
@@ -264,6 +330,10 @@
 .canvasbutton #nav-show i:active {
   width: 30px;
   height: 30px;
+}
+.canvasbutton li#nav-show {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 @media (min-width: 1024px) and (max-width: 1200px) {
@@ -293,6 +363,38 @@
     width: 100% !important;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media (min-width: 1750px) {
+  #about {
+    max-width: 1250px;
+  }
+
+  #about-me h1 {
+    margin-bottom: 20px !important;
+  }
+
+  #my-plan {
+    padding-top: 80px !important;
+  }
+  #my-plan h2 {
+    margin-bottom: 20px !important;
+  }
+
+  #knowledge h2 {
+    margin-bottom: 20px !important;
+  }
+
+  .techs {
+    padding-top: 40px;
+  }
+
+  .work-container {
+    max-width: 1250px;
+  }
+
+  .my-work-wrapper {
+    max-width: 1250px;
   }
 }
 @media (min-width: 835px) and (max-width: 1024px) {
@@ -396,6 +498,9 @@
   #canvas #work-showcase-container .for-first-child:not(:first-child) {
     margin-top: 6vh;
   }
+}
+body {
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
