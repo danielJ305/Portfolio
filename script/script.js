@@ -99,7 +99,7 @@ $(document).ready(function () {
         $('.blink').fadeOut();
         $('.blink').fadeIn();
     }
-    setInterval(blink, 3000);
+    setInterval(blink, 3500);
 });
 /*** _____________________ ***/
 
