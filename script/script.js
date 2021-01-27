@@ -27,7 +27,8 @@ var UIController = (function() {
         unactiveTitle: '#unactive-work-title',
         workToggleBtn: '#work-toggle',
         graphicDesignSec: '#graphic-design',
-        webDevSec: '#work-showcase-container'
+        webDevSec: '.work-container'
+
     };
 
     return {
@@ -98,6 +99,9 @@ $(document).ready(function () {
         $('.blink').fadeOut();
         $('.blink').fadeIn();
     }
-    setInterval(blink, 1000);
+    setInterval(blink, 3000);
 });
 /*** _____________________ ***/
+
+
+

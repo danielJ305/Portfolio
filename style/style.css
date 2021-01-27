@@ -1,3 +1,8 @@
+.body {
+  background: rgb(53, 47, 77);
+  background: linear-gradient(149deg, rgba(53, 47, 77, 1) 0%, rgba(24, 20, 38, 1) 37%, rgba(18, 15, 29, 1) 87%);
+}
+
 /* Extends for Navigation */
 #navigation .nav-tags #nav-hide {
   background-color: #181426;
@@ -162,7 +167,6 @@
 
 #canvas {
   color: #F2F0F0;
-  background-color: #181426;
   font-family: "Roboto Mono", monospace;
   width: 100%;
   margin-left: 350px;
